@@ -1,0 +1,93 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:pattern {"slug":"cogent-base/ticker"} /-->
+
+<!-- wp:group {"tagName":"main","layout":{"type":"constrained","wideSize":"1200px"}} -->
+<main class="wp-block-group">
+
+	<!-- wp:group {"align":"full","className":"hero","backgroundColor":"contrast","textColor":"base","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|40","right":"var:preset|spacing|40"}}},"layout":{"type":"constrained","wideSize":"1200px"}} -->
+	<div class="wp-block-group alignfull hero has-base-color has-contrast-background-color has-text-color has-background" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--40)">
+		<!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
+		<div class="wp-block-group alignwide">
+			<!-- wp:paragraph {"className":"hero__kicker"} -->
+			<p class="hero__kicker">What farm technology costs, what the land can earn, and who has done it</p>
+			<!-- /wp:paragraph -->
+
+			<!-- wp:query {"queryId":10,"query":{"perPage":1,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","inherit":false},"className":"hero-feature"} -->
+			<div class="wp-block-query hero-feature">
+				<!-- wp:post-template -->
+				<!-- wp:post-terms {"term":"category","className":"cat-pill"} /-->
+				<!-- wp:post-title {"isLink":true,"level":1,"fontSize":"xx-large"} /-->
+				<!-- wp:post-excerpt {"showMoreOnNewLine":false,"fontSize":"large"} /-->
+				<!-- wp:post-featured-image {"isLink":true,"sizeSlug":"large"} /-->
+				<!-- /wp:post-template -->
+			</div>
+			<!-- /wp:query -->
+
+			<!-- wp:query {"queryId":12,"query":{"perPage":3,"pages":0,"offset":1,"postType":"post","order":"desc","orderBy":"date","inherit":false},"className":"hero-sub"} -->
+			<div class="wp-block-query hero-sub">
+				<!-- wp:post-template {"layout":{"type":"grid","minimumColumnWidth":"16rem"}} -->
+				<!-- wp:post-terms {"term":"category","className":"cat-pill"} /-->
+				<!-- wp:post-title {"isLink":true,"level":2,"fontSize":"large"} /-->
+				<!-- /wp:post-template -->
+			</div>
+			<!-- /wp:query -->
+		</div>
+		<!-- /wp:group -->
+	</div>
+	<!-- /wp:group -->
+
+	<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","left":"var:preset|spacing|40","right":"var:preset|spacing|40"}}},"layout":{"type":"default"}} -->
+	<div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)">
+		<!-- wp:pattern {"slug":"cogent-base/ad-leaderboard"} /-->
+	</div>
+	<!-- /wp:group -->
+
+	<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|60","left":"var:preset|spacing|40","right":"var:preset|spacing|40"}}},"layout":{"type":"default"}} -->
+	<div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--40)">
+		<!-- wp:columns {"className":"home-cols"} -->
+		<div class="wp-block-columns home-cols">
+			<!-- wp:column {"width":"66.66%"} -->
+			<div class="wp-block-column" style="flex-basis:66.66%">
+				<!-- wp:pattern {"slug":"cogent-base/latest"} /-->
+
+				<!-- wp:spacer {"height":"var:preset|spacing|50"} -->
+				<div style="height:var(--wp--preset--spacing--50)" aria-hidden="true" class="wp-block-spacer"></div>
+				<!-- /wp:spacer -->
+
+				<!-- wp:pattern {"slug":"cogent-base/ad-billboard"} /-->
+
+				<!-- wp:pattern {"slug":"smart-farming-news/section-news"} /-->
+				<!-- wp:pattern {"slug":"smart-farming-news/section-energy-land-use"} /-->
+				<!-- wp:pattern {"slug":"smart-farming-news/section-farm-tech"} /-->
+				<!-- wp:pattern {"slug":"smart-farming-news/section-diversification"} /-->
+				<!-- wp:pattern {"slug":"smart-farming-news/section-software-data"} /-->
+				<!-- wp:pattern {"slug":"smart-farming-news/section-natural-capital"} /-->
+				<!-- wp:pattern {"slug":"smart-farming-news/section-finance-grants"} /-->
+				<!-- wp:pattern {"slug":"smart-farming-news/section-land-tax-succession"} /-->
+			</div>
+			<!-- /wp:column -->
+
+			<!-- wp:column {"width":"33.33%","className":"site-sidebar"} -->
+			<div class="wp-block-column site-sidebar" style="flex-basis:33.33%">
+				<!-- wp:pattern {"slug":"cogent-base/sidebar-explore"} /-->
+				<!-- The interview series card: the latest interview and a way into the rest.
+				     Renders nothing until the title has a published interview. -->
+				<!-- wp:shortcode -->[cogent_leaders_mpu]<!-- /wp:shortcode -->
+				<!-- wp:pattern {"slug":"cogent-base/most-read"} /-->
+				<!-- wp:pattern {"slug":"cogent-base/sidebar-tools"} /-->
+				<!-- wp:pattern {"slug":"cogent-base/sidebar-linkedin"} /-->
+				<!-- wp:pattern {"slug":"cogent-base/ad-mpu-lower"} /-->
+			</div>
+			<!-- /wp:column -->
+		</div>
+		<!-- /wp:columns -->
+	</div>
+	<!-- /wp:group -->
+
+	<!-- wp:pattern {"slug":"cogent-base/cta-newsletter"} /-->
+
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

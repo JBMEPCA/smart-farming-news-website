@@ -1,0 +1,39 @@
+<!-- wp:group {"tagName":"header","className":"site-header","backgroundColor":"contrast","textColor":"base","style":{"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|40","right":"var:preset|spacing|40"}}},"layout":{"type":"constrained","wideSize":"1200px"}} -->
+<header class="wp-block-group site-header has-base-color has-contrast-background-color has-text-color has-background" style="padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--40)">
+	<!-- wp:group {"align":"wide","className":"site-header__bar","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
+	<div class="wp-block-group alignwide site-header__bar">
+		<!-- wp:group {"className":"site-brand","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}} -->
+		<div class="wp-block-group site-brand">
+			<!-- wp:html -->
+			<a class="logo-lockup" href="/" aria-label="Smart Farming News home">
+				<span class="logo-row">Smart&nbsp;Farming&nbsp;<span class="logo-mark">NEWS</span></span>
+				<span class="logo-mag">FARMING SMARTER AS A BUSINESS</span>
+			</a>
+			<!-- /wp:html -->
+		</div>
+		<!-- /wp:group -->
+
+		<!-- wp:group {"className":"site-header__right","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}} -->
+		<div class="wp-block-group site-header__right">
+			<!-- wp:navigation {"className":"site-nav","overlayMenu":"mobile","overlayBackgroundColor":"contrast","overlayTextColor":"base","layout":{"type":"flex","justifyContent":"right"}} -->
+				<!-- wp:navigation-link {"label":"News","url":"/category/news/","kind":"custom","isTopLevelLink":true} /-->
+				<!-- wp:navigation-link {"label":"Energy &amp; Land Use","url":"/category/energy-land-use/","kind":"custom","isTopLevelLink":true} /-->
+				<!-- wp:navigation-link {"label":"Farm Tech","url":"/category/farm-tech/","kind":"custom","isTopLevelLink":true} /-->
+				<!-- wp:navigation-link {"label":"Diversification","url":"/category/diversification/","kind":"custom","isTopLevelLink":true} /-->
+
+				<!-- wp:navigation-submenu {"label":"More","url":"#","kind":"custom","isTopLevelItem":true} -->
+					<!-- wp:navigation-link {"label":"Software &amp; Data","url":"/category/software-data/","kind":"custom"} /-->
+					<!-- wp:navigation-link {"label":"Natural Capital","url":"/category/natural-capital/","kind":"custom"} /-->
+					<!-- wp:navigation-link {"label":"Finance &amp; Grants","url":"/category/finance-grants/","kind":"custom"} /-->
+					<!-- wp:navigation-link {"label":"Land, Tax &amp; Succession","url":"/category/land-tax-succession/","kind":"custom"} /-->
+				<!-- /wp:navigation-submenu -->
+
+				<!-- wp:navigation-link {"label":"Submit","url":"/submit-news/","kind":"custom","isTopLevelLink":true} /-->
+			<!-- /wp:navigation -->
+			<!-- wp:search {"showLabel":false,"placeholder":"Search articles","buttonPosition":"button-only","buttonUseIcon":true,"className":"header-search"} /-->
+		</div>
+		<!-- /wp:group -->
+	</div>
+	<!-- /wp:group -->
+</header>
+<!-- /wp:group -->
