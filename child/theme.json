@@ -16,13 +16,13 @@
 				},
 				{
 					"slug": "brand",
-					"color": "#C2410C",
-					"name": "Field Orange"
+					"color": "#2F6B2F",
+					"name": "Field Green"
 				},
 				{
 					"slug": "brand-bright",
-					"color": "#F26B1D",
-					"name": "Field Orange Bright"
+					"color": "#7CC456",
+					"name": "Field Green Bright"
 				},
 				{
 					"slug": "surface",

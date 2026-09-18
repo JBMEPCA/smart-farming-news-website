@@ -127,3 +127,35 @@ add_filter( 'cogent_home_sections', function () {
 		'land-tax-succession',
 	);
 } );
+
+/* masthead-art */
+/**
+ * The drawn masthead and tab icon, September 2026. The artwork is built by
+ * cogent-base-theme/scripts/brand and copied into assets/brand/ by its
+ * install.mjs; edit the spec there and reinstall rather than editing these
+ * files. Both values need cogent-base 1.21.0 or later.
+ *
+ * masthead_art puts the artwork in the mobile menu; parts/header.html and
+ * parts/footer.html carry the same files for the page itself.
+ */
+add_filter(
+	'cogent_brand',
+	function ( $brand ) {
+		$brand['masthead_art'] = get_stylesheet_directory_uri() . '/assets/brand/wordmark-reversed.svg';
+		return $brand;
+	},
+	20
+);
+
+/**
+ * The tab icon is this title's own artwork. The parent passes its generated
+ * split mark as the fallback, which is returned if the file is ever missing so
+ * the tab is never left blank.
+ */
+add_filter(
+	'cogent_favicon_svg',
+	function ( $fallback ) {
+		$file = get_stylesheet_directory() . '/assets/brand/favicon.svg';
+		return is_readable( $file ) ? (string) file_get_contents( $file ) : $fallback;
+	}
+);
