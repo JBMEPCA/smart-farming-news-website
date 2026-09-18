@@ -66,15 +66,15 @@ add_filter( 'cogent_brand', function ( $brand ) {
 	return $brand;
 } );
 
-/*
- * GA4: no cogent_ga4_id filter until the property exists (launch tracker, JB
- * step 7). If Site Kit ends up doing the tagging, leave this absent or the
- * visit is counted twice; if not, add:
- *
- * add_filter( 'cogent_ga4_id', function () {
- * 	return 'G-XXXXXXXXXX';
- * } );
+/**
+ * GA4 measurement ID for the "Smart Farming News" property (554936661), in the
+ * Cogent Titles account owned by cimeshot@gmail.com, created 18 Sep 2026.
+ * Site Kit is installed but not connected, so this is the only tag on the
+ * page; the parent stands aside automatically if Site Kit ever starts tagging.
  */
+add_filter( 'cogent_ga4_id', function () {
+	return 'G-NJGF2EWCRE';
+} );
 
 /**
  * The byline for this title.
