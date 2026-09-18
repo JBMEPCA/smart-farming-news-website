@@ -56,3 +56,16 @@ News's face; do not reuse it.)
 ## Launch tracking
 
 `cogent-incubator/docs/smart-farming-news-launch.md` is the live checklist.
+
+## Logo (final, 18 Sep 2026)
+
+JB chose this title's logo on 18 Sep 2026 and it is live on the site, in the
+tab icon, the WordPress site icon and the Yoast publisher logo: FD: smartfarming in lowercase heavy Archivo, farming in Field Green (#2F6B2F), with a green NEWS tag the full height of the word; tab icon a white sf on green.
+The site palette was changed to match the same day, so any colour note above
+that names the launch scaffold's colour is out of date.
+
+The artwork is generated, never hand-edited: the spec is in
+`cogent-base-theme/scripts/brand/specs.mjs`, files are built into its `dist/`
+and copied into `child/assets/brand/` by `install.mjs`. Change the spec,
+rebuild, reinstall, deploy. Do not redraw, recolour or replace the logo
+without JB asking.
