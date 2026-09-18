@@ -75,17 +75,25 @@
 			"fontFamilies": [
 				{
 					"slug": "heading",
-					"name": "IBM Plex Sans",
-					"fontFamily": "\"IBM Plex Sans\", ui-sans-serif, system-ui, sans-serif",
+					"name": "Barlow Condensed",
+					"fontFamily": "\"Barlow Condensed\", \"Arial Narrow\", ui-sans-serif, system-ui, sans-serif",
 					"fontFace": [
 						{
-							"fontFamily": "IBM Plex Sans",
+							"fontFamily": "Barlow Condensed",
 							"fontStyle": "normal",
-							"fontWeight": "100 700",
-							"fontStretch": "75% 100%",
+							"fontWeight": "600",
 							"fontDisplay": "swap",
 							"src": [
-								"file:./assets/fonts/ibm-plex-sans-variable.ttf"
+								"file:./assets/fonts/barlow-condensed-600.ttf"
+							]
+						},
+						{
+							"fontFamily": "Barlow Condensed",
+							"fontStyle": "normal",
+							"fontWeight": "800",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/barlow-condensed-800.ttf"
 							]
 						}
 					]
@@ -98,7 +106,7 @@
 				{
 					"slug": "brand",
 					"name": "Brand Lockup",
-					"fontFamily": "\"IBM Plex Sans\", ui-sans-serif, system-ui, sans-serif"
+					"fontFamily": "\"Barlow Condensed\", \"Arial Narrow\", ui-sans-serif, system-ui, sans-serif"
 				},
 				{
 					"slug": "mono",

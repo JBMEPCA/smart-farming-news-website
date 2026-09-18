@@ -46,11 +46,12 @@ Check the keyword registry before commissioning.
 ## Design
 
 Launch-safe scaffold: Field Orange (#C2410C) on Graphite (#12151A), with Crop
-Lime and Sensor Teal as accents. Display face IBM Plex Sans at 88% width, mono
-JetBrains Mono. The masthead is the parent's typeset lockup until the drawn
+Lime and Sensor Teal as accents. Display face Barlow Condensed (600 and 800),
+mono JetBrains Mono. The masthead is the parent's typeset lockup until the drawn
 mark is built with `cogent-base-theme/scripts/brand` (own face and structure,
-never a recolour of a sibling). The Plex file is a 537 KB variable TTF from the
-brand kit; subset and convert it to woff2 at the design pass.
+never a recolour of a sibling). The Barlow files are TTFs from the brand kit;
+convert them to woff2 at the design pass. (IBM Plex Sans is Dental Business
+News's face; do not reuse it.)
 
 ## Launch tracking
 

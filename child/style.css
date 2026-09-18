@@ -29,16 +29,15 @@ Text Domain: smart-farming-news
    system: its own face and structure, never a recolour of a sibling.
 ------------------------------------------------------------------- */
 
-/* ---------- Display face: IBM Plex Sans, narrowed ----------
+/* ---------- Display face: Barlow Condensed ----------
 
-   The engineering face. Plex is a variable font with a width axis
-   (75 to 100), and headings run at 88% width so they read like
-   instrument labelling rather than a newspaper. That width is this
-   title's signature and no sibling uses Plex, so it lives here. */
-h1, h2, h3, h4,
-.wp-block-post-title,
+   Barlow is drawn from road signage and machinery livery, and the
+   condensed cut reads like instrument labelling rather than a
+   newspaper. theme.json ships two static weights, 600 and 800: the
+   parent's 700 headings resolve to 800, which is intended. A touch of
+   tracking keeps the condensed caps from crowding at small sizes. */
 .logo-row {
-	font-stretch: 88%;
+	letter-spacing: 0.01em;
 }
 
 /* ---------- Masthead chip ----------
