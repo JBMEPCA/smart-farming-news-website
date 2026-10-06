@@ -35,6 +35,13 @@ add_filter( 'cogent_brand', function ( $brand ) {
 
 	$brand['newsletter_promise'] = 'Farming smarter as a business: what the technology costs, what the land can earn, and who has done it.';
 	$brand['newsletter_band']    = 'The best of Smart Farming News in your inbox: farm tech judged on payback, energy and natural capital deals, diversification and the tax rules that shape them. Free, weekly, no hype.';
+
+	// The homepage signup bar, between the ticker and the hero. Two short
+	// strings rather than newsletter_band above: that one is a paragraph and
+	// this bar is one line. The frequency stands in for a subscriber count,
+	// so it has to match when this title actually sends.
+	$brand['signup_band_title']   = 'Farm business news, straight to your inbox';
+	$brand['signup_band_promise'] = 'Farm tech judged on payback, diversification and the tax rules. Free, every Thursday.';
 	$brand['article_signup']     = 'One email a week: the costs, returns and deals UK farm businesses actually use.';
 
 	/*
@@ -158,4 +165,27 @@ add_filter(
 		$file = get_stylesheet_directory() . '/assets/brand/favicon.svg';
 		return is_readable( $file ) ? (string) file_get_contents( $file ) : $fallback;
 	}
+);
+
+/* newsletter-popup */
+/**
+ * The newsletter popup, switched on 23 September 2026.
+ *
+ * cogent-base ships it disabled so that deploying the parent for an unrelated
+ * reason can never turn a fleet-wide interstitial on by surprise. Enabling it
+ * is therefore a per-title decision, and this is where that decision lives.
+ *
+ * Thresholds are whatever cogent_popup_config() currently defaults to; they are
+ * not restated here, because a comment that quotes the parent's numbers goes
+ * stale the first time they are tuned and this one already did. Override a key
+ * in this filter if THIS title wants something different from the fleet.
+ */
+add_filter(
+	'cogent_popup',
+	function ( $config ) {
+		$config['enabled'] = true;
+
+		return $config;
+	},
+	20
 );
